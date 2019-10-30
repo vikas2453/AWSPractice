@@ -32,7 +32,7 @@ public class LambdaFunctionHandler implements RequestHandler<Object, String> {
 
 	static {
 		// put your accesskey and secretkey here
-		credentials = new BasicAWSCredentials("AKIAI7EMEBAQ5775JBJA", "JRhWcd9YwHJxYm9xE0NiO5Kf3fWzsy4rKfGKp42J");
+		credentials = new BasicAWSCredentials("*", "*");
 	}
 
 	@Override
