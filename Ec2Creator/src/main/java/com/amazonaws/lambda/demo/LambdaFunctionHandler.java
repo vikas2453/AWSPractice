@@ -28,18 +28,12 @@ public class LambdaFunctionHandler implements RequestHandler<Object, String> {
 	// private static Logger logger=
 	// Logger.getLogger(LambdaFunctionHandler.class.getName());
 
-	private static final AWSCredentials credentials;
-
-	static {
-		// put your accesskey and secretkey here
-		credentials = new BasicAWSCredentials("*", "*");
-	}
 
 	@Override
 	public String handleRequest(Object input, Context context) {
 
 		AmazonEC2 ec2Client = AmazonEC2ClientBuilder.standard()
-				.withCredentials(new AWSStaticCredentialsProvider(credentials)).withRegion(Regions.US_EAST_2).build();
+			.withRegion(Regions.US_EAST_2).build();
 		
 		//createSecurityGroup(ec2Client, "myFirstSGGroupfromJava", "myFirstSGGroupfromJava", "tcp", 22, 22);
 		//KeyPair keypair= createKeyPair(ec2Client, "keypair-from-code");
