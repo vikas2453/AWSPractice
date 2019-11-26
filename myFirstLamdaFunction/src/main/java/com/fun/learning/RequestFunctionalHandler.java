@@ -12,6 +12,7 @@ public class RequestFunctionalHandler implements RequestHandler<Map<String, Stri
 	private static Logger logger= Logger.getLogger(RequestFunctionalHandler.class.getName());
 	public String handleRequest(Map<String, String> input, Context context) {
 		logger.info("my First lambda function invoked");
+		
 		return "my First lambda function";
 	}
 
