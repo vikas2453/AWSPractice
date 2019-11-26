@@ -52,7 +52,7 @@ public class LambdaFunctionHandler implements RequestHandler<Object, String> {
                 instance.getState().getName(),
                 instance.getMonitoring().getState())
 		));
-		return null;
+		return "ec2-creator-> "+input;
 	}
 
 	public KeyPair createKeyPair(AmazonEC2 ec2Client, String keyPairName) {
