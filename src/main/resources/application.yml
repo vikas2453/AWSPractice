@@ -1,5 +1,0 @@
-datasource:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://[host]:[port]/[database]
-  username: username
-  password: password
